@@ -1,14 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import { reduxLogger } from '@reduxjs/toolkit';
+import logger from 'redux-logger';
 
 import cakeReducer from '../features/cake/cakeSlice';
 
 import iceCreamReducer from '../features/icecream/icecreamSlice';
 
 import userReducer from '../features/user/userSlice';
-
-const logger = reduxLogger.createLogger();
 
 const store = configureStore({
   reducer: {
